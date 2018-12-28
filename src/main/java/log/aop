@@ -1,0 +1,8 @@
+<aop:config xmlns:aop="http://www.springframework.org/schema/aop">
+    <aop:aspect id = "myAspect" ref = "address">
+
+        <aop:around pointcut-ref = "businessService" method = "database.ProjectManagerRepository.getAddress"/>
+
+    </aop:aspect>
+</aop:config>
+
